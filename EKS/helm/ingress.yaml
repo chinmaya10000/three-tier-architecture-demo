@@ -9,7 +9,8 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
 spec:
   rules:
-    - http:
+    - host: example.yourdomain.com
+      http:
         paths:
           - path: /
             pathType: Prefix
