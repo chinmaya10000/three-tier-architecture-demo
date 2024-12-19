@@ -569,11 +569,6 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
-        env:
-        - name: INSTANA_EUM_KEY
-          value: null
-        - name: INSTANA_EUM_REPORTING_URL
-          value: https://eum-eu-west-1.instana.io
         resources:
           limits:
             cpu: 200m
